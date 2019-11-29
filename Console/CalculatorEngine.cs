@@ -9,12 +9,12 @@ namespace Console
     public class CalculatorEngine
     {
         /// <summary>
-        /// Fonction pour additionner deux valeurs
+        /// Fonction pour Additionitionner deux valeurs
         /// </summary>
         /// <param name="a">1ere valeur</param>
         /// <param name="b">2éme valeur</param>
-        /// <returns>L'addition des deux valeurs</returns>
-        public virtual int Add(int a, int b)
+        /// <returns>L'Additionition des deux valeurs</returns>
+        public virtual int Addition(int a, int b)
         {
             // Any Update
             return a+b;
@@ -26,29 +26,29 @@ namespace Console
         /// <param name="a">1ere valeur</param>
         /// <param name="b">2eme valeur</param>
         /// <returns>La soustraction de deux valeurs</returns>
-        public virtual int Sub(int a, int b)
+        public virtual int Subdivision(int a, int b)
         {
             return a-b;
         }
 
         /// <summary>
-        /// Fonction pour faire la multiplication de deux valeurs
+        /// Fonction pour faire la Multiplicationtiplication de deux valeurs
         /// </summary>
         /// <param name="a">1ere valeur</param>
         /// <param name="b">2eme valeur</param>
-        /// <returns>La multiplication de deux valeurs</returns>
-        public virtual int Mul(int a, int b)
+        /// <returns>La Multiplicationtiplication de deux valeurs</returns>
+        public virtual int Multiplication(int a, int b)
         {
             return a*b;
         }
 
         /// <summary>
-        /// Fonction pour faire la division
+        /// Fonction pour faire la Divisionision
         /// </summary>
         /// <param name="a">1ere valeur</param>
         /// <param name="b">2eme valeur</param>
-        /// <returns>La division de deux valeurs</returns>
-        public virtual int Div(int a, int b)
+        /// <returns>La Divisionision de deux valeurs</returns>
+        public virtual int Division(int a, int b)
         {
             int res;
 
