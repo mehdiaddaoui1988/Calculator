@@ -14,7 +14,7 @@ namespace Console
         /// <param name="a">1ere valeur</param>
         /// <param name="b">2éme valeur</param>
         /// <returns>L'addition des deux valeurs</returns>
-        public int Add(int a, int b)
+        public virtual int Add(int a, int b)
         {
             // Any Update
             return a+b;
@@ -26,7 +26,7 @@ namespace Console
         /// <param name="a">1ere valeur</param>
         /// <param name="b">2eme valeur</param>
         /// <returns>La soustraction de deux valeurs</returns>
-        public int Sub(int a, int b)
+        public virtual int Sub(int a, int b)
         {
             return a-b;
         }
@@ -37,7 +37,7 @@ namespace Console
         /// <param name="a">1ere valeur</param>
         /// <param name="b">2eme valeur</param>
         /// <returns>La multiplication de deux valeurs</returns>
-        public int Mul(int a, int b)
+        public virtual int Mult(int a, int b)
         {
             return a*b;
         }
@@ -48,7 +48,7 @@ namespace Console
         /// <param name="a">1ere valeur</param>
         /// <param name="b">2eme valeur</param>
         /// <returns>La division de deux valeurs</returns>
-        public static int Div(int a, int b)
+        public virtual int Div(int a, int b)
         {
             int res;
 
