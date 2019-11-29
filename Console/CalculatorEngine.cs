@@ -16,6 +16,7 @@ namespace Console
         /// <returns>L'addition des deux valeurs</returns>
         public int Add(int a, int b)
         {
+            // Any Update
             return a+b;
         }
 
