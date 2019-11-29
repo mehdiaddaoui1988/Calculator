@@ -52,7 +52,7 @@ namespace Console
         {
             int resultat;
 
-            if (val2 != 0 )
+            if (val2 != 0)
             {
                 resultat = val1 / val2;
             }
@@ -60,6 +60,39 @@ namespace Console
             {
                 resultat = Int32.MinValue;
             }
+            return resultat;
+        }
+        public virtual int Square(int val1)
+        {
+            int resultat;
+
+            resultat = val1 * val1;
+
+
+
+
+            return resultat;
+        }
+        public virtual double SquareRoot(int val1)
+        {
+            double resultat;
+
+            resultat = Math.Sqrt(val1);
+
+
+
+
+            return resultat;
+        }
+        public virtual float Percent(int val1)
+        {
+            float resultat;
+
+            resultat = val1 / 100;
+
+
+
+
             return resultat;
         }
     }

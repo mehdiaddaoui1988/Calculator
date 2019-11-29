@@ -76,7 +76,7 @@ namespace CalculatorUnitTest
 
         }
 
-        [TestMethod] // That is annotations - Test de la Divisionision par zero
+        [TestMethod] // That is annotations - Test de la Division par zero
         public void TestMethodDivisionByZero()
         {
             //Implémentation des valeurs de test
@@ -92,6 +92,48 @@ namespace CalculatorUnitTest
             Assert.AreEqual(exp, actual);
 
 
+        }
+        [TestMethod] // That is annotations - Test de la racine carré
+        public void TestMethodSquareRoot()
+        {
+            //Implémentation des valeurs de test
+            int a = 2;
+            double exp = Math.Sqrt(a);
+
+            // Instanciation d'un objet CalculatorEngine défini dans la classe CalculatorEngine
+            CalculatorEngine engine = new CalculatorEngine();
+            double actual = engine.SquareRoot(a);
+
+            //Vérification de l'égalité entre the expected valeur et l'actual valeur 
+            Assert.AreEqual(exp, actual);
+        }
+        [TestMethod] // That is annotations - Test de la racine carré
+        public void TestMethodSquare()
+        {
+            //Implémentation des valeurs de test
+            int a = 2;
+            double exp = Math.Pow(a, 2);
+
+            // Instanciation d'un objet CalculatorEngine défini dans la classe CalculatorEngine
+            CalculatorEngine engine = new CalculatorEngine();
+            int actual = engine.Square(a);
+
+            //Vérification de l'égalité entre the expected valeur et l'actual valeur 
+            Assert.AreEqual(exp, actual);
+        }
+        [TestMethod] // That is annotations - Test de la racine carré
+        public void TestMethodPercent()
+        {
+            //Implémentation des valeurs de test
+            int a = 2;
+            double exp = a / 100;
+
+            // Instanciation d'un objet CalculatorEngine défini dans la classe CalculatorEngine
+            CalculatorEngine engine = new CalculatorEngine();
+            double actual = engine.Percent(a);
+
+            //Vérification de l'égalité entre the expected valeur et l'actual valeur 
+            Assert.AreEqual(exp, actual);
         }
     }
 }
