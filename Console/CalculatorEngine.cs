@@ -37,7 +37,7 @@ namespace Console
         /// <param name="a">1ere valeur</param>
         /// <param name="b">2eme valeur</param>
         /// <returns>La multiplication de deux valeurs</returns>
-        public virtual int Mult(int a, int b)
+        public virtual int Mul(int a, int b)
         {
             return a*b;
         }
