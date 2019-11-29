@@ -47,7 +47,7 @@ namespace Console
         /// <param name="a">1ere valeur</param>
         /// <param name="b">2eme valeur</param>
         /// <returns>La division de deux valeurs</returns>
-        public int Div(int a, int b)
+        public static int Div(int a, int b)
         {
             int res;
 
