@@ -14,10 +14,10 @@ namespace Console
         /// <param name="a">1ere valeur</param>
         /// <param name="b">2éme valeur</param>
         /// <returns>L'Additionition des deux valeurs</returns>
-        public virtual int Addition(int a, int b)
+        public virtual int Addition(int val1, int val2)
         {
             // Any Update
-            return a+b;
+            return val1 + val2;
         }
 
         /// <summary>
@@ -26,9 +26,9 @@ namespace Console
         /// <param name="a">1ere valeur</param>
         /// <param name="b">2eme valeur</param>
         /// <returns>La soustraction de deux valeurs</returns>
-        public virtual int Subdivision(int a, int b)
+        public virtual int Subdivision(int val1, int val2)
         {
-            return a-b;
+            return val1 - val2;
         }
 
         /// <summary>
@@ -37,9 +37,9 @@ namespace Console
         /// <param name="a">1ere valeur</param>
         /// <param name="b">2eme valeur</param>
         /// <returns>La Multiplicationtiplication de deux valeurs</returns>
-        public virtual int Multiplication(int a, int b)
+        public virtual int Multiplication(int val1, int val2)
         {
-            return a*b;
+            return val1 * val2;
         }
 
         /// <summary>
@@ -48,19 +48,19 @@ namespace Console
         /// <param name="a">1ere valeur</param>
         /// <param name="b">2eme valeur</param>
         /// <returns>La Divisionision de deux valeurs</returns>
-        public virtual int Division(int a, int b)
+        public virtual int Division(int val1, int val2)
         {
-            int res;
+            int resultat;
 
-            if ( b != 0 )
+            if (val2 != 0 )
             {
-                res = a / b;
+                resultat = val1 / val2;
             }
             else
             {
-                res = Int32.MinValue;
+                resultat = Int32.MinValue;
             }
-            return res;
+            return resultat;
         }
     }
 }

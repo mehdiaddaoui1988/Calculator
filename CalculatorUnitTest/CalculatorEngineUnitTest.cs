@@ -7,8 +7,8 @@ namespace CalculatorUnitTest
     [TestClass] // That is annotations 
     public class CalculatorEngineUnitTest
     {
-        [TestMethod] // That is annotations - Test de l'addition 
-        public void TestMethodAdd()
+        [TestMethod] // That is annotations - Test de l'Additionition 
+        public void TestMethodAddition()
         {
             //Implémentation des valeurs de test
             int a = 1;
@@ -17,7 +17,7 @@ namespace CalculatorUnitTest
 
             // Instanciation d'un objet CalculatorEngine défini dans la classe CalculatorEngine
             CalculatorEngine engine = new CalculatorEngine();
-            int actual = engine.Add(a, b);
+            int actual = engine.Addition(a, b);
 
             //Vérification de l'égalité entre the expected valeur et l'actual valeur 
             Assert.AreEqual(exp, actual);
@@ -25,7 +25,7 @@ namespace CalculatorUnitTest
 
         }
         [TestMethod] // That is annotations - Test de la soustraction 
-        public void TestMethodSub()
+        public void TestMethodSubdivision()
         {
             //Implémentation des valeurs de test
             int a = 2;
@@ -34,15 +34,15 @@ namespace CalculatorUnitTest
 
             // Instanciation d'un objet CalculatorEngine défini dans la classe CalculatorEngine
             CalculatorEngine engine = new CalculatorEngine();
-            int actual = engine.Sub(a, b);
+            int actual = engine.Subdivision(a, b);
 
             //Vérification de l'égalité entre the expected valeur et l'actual valeur 
             Assert.AreEqual(exp, actual);
 
 
         }
-        [TestMethod] // That is annotations - Test de la multiplication 
-        public void TestMethodMul()
+        [TestMethod] // That is annotations - Test de la Multiplicationtiplication 
+        public void TestMethodMultiplication()
         {
             //Implémentation des valeurs de test
             int a = 1;
@@ -51,15 +51,15 @@ namespace CalculatorUnitTest
 
             // Instanciation d'un objet CalculatorEngine défini dans la classe CalculatorEngine
             CalculatorEngine engine = new CalculatorEngine();
-            int actual = engine.Mul(a, b);
+            int actual = engine.Multiplication(a, b);
 
             //Vérification de l'égalité entre the expected valeur et l'actual valeur 
             Assert.AreEqual(exp, actual);
 
 
         }
-        [TestMethod] // That is annotations - Test de la division 
-        public void TestMethodDiv()
+        [TestMethod] // That is annotations - Test de la Divisionision 
+        public void TestMethodDivision()
         {
             //Implémentation des valeurs de test
             int a = 2;
@@ -68,7 +68,7 @@ namespace CalculatorUnitTest
 
             // Instanciation d'un objet CalculatorEngine défini dans la classe CalculatorEngine
             CalculatorEngine engine = new CalculatorEngine();
-            int actual = engine.Div(a, b);
+            int actual = engine.Division(a, b);
 
             //Vérification de l'égalité entre the expected valeur et l'actual valeur 
             Assert.AreEqual(exp, actual);
@@ -76,8 +76,8 @@ namespace CalculatorUnitTest
 
         }
 
-        [TestMethod] // That is annotations - Test de la division par zero
-        public void TestMethodDivByZero()
+        [TestMethod] // That is annotations - Test de la Divisionision par zero
+        public void TestMethodDivisionByZero()
         {
             //Implémentation des valeurs de test
             int a = 2;
@@ -86,7 +86,7 @@ namespace CalculatorUnitTest
 
             // Instanciation d'un objet CalculatorEngine défini dans la classe CalculatorEngine
             CalculatorEngine engine = new CalculatorEngine();
-            int actual = engine.Div(a, b);
+            int actual = engine.Division(a, b);
 
             //Vérification de l'égalité entre the expected valeur et l'actual valeur 
             Assert.AreEqual(exp, actual);
